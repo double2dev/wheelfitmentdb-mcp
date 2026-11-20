@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.double2dev/wheelfitmentdb-mcp",
+  "description": "Automotive wheel fitment engineering MCP server: offset/tire clearance calculator, backspacing & PCD converters, hub ring calculator, and offline OEM vehicle spec lookup.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/double2dev/wheelfitmentdb-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://wheelfitmentdb.com/mcp/",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "wheelfitmentdb-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WHEELFITMENTDB_DATA_PATH",
+          "description": "Optional path to a local WheelFitmentDB Business Pro JSON file (12,902 vehicles, 1992-2026) to unlock full offline lookups beyond the 50-model built-in preview.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
